@@ -94,12 +94,8 @@ body {
     }
   }
 
-  form {
-    border: 3px solid #f1f1f1;
-  }
-
   input[type=text], input[type=password] {
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -139,6 +135,10 @@ body {
   
   .container {
     padding: 16px;
+    width: auto;
+    border-radius: 4px;
+   background-color: rgb(179, 245, 239);
+    border: 3px solid #f1f1f1;
   }
   
   span.psw {
@@ -165,3 +165,9 @@ body {
     background:grey;
     border-radius:5px;
   }
+  .loginbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #6cf436;
+  }
+  
