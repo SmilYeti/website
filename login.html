@@ -12,20 +12,24 @@
     
         <div id="first" class="container">
             <form action="" method="post">
-            <label for="uname"><b>Username</b></label>
+                <div>
+           
             <input type="text" id="loginusername" placeholder="Username" required/>
-            
-            <label for="psw"><b>Password</b></label>
-            <input type="password" id="loginpassword" placeholder="Password" required/>
+            </div>
+            <div>
+           
+            <input class = "input" type="password" id="loginpassword" placeholder="Password" required/>
+            </div>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
-            <input type="button" id="login" value="Sign In" />
+            <button id="loginbtn" class="loginbtn">Sign In</button>
+            <button id="loginbtn" class="loginbtn">Register</button>
         </form> 
     </div>
     <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+        <button type="button" class="cancelbtn" ><a href = "index.html" style="text-decoration: none; color: white;">Cancel</a></button>
+        <span class="psw"> <a href="#">Forgot password?</a></span>
       </div>
     
     
