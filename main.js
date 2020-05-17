@@ -21,7 +21,7 @@ $(document).ready(function(){
 */
 //hints--------------
 $(document).ready(function(){
-    $('.hover').mousemove(function(e){
+    $('.hover').mouseon(function(e){
         var hint = $(this).attr('ht');
         $('#hint').css({'left': e.clientX + 10, 'top': e.clientY + 10});
         $('#hint').show().text(hint);
@@ -30,3 +30,48 @@ $(document).ready(function(){
     });
 });
 //hints--------------
+//hints for product--------------
+/*var modal1 = document.getElementById("modal1");
+var btn1 = document.getElementById("btn1");
+var span1 = document.getElementById("span1");
+
+btn1.onclick = function () {
+modal1.style.display = "block";
+}
+
+span1.onclick = function () {
+modal1.style.display = "none";
+}
+
+window.onclick = function (event) {
+if (event.target == modal1) {
+modal1.style.display = "none";
+}
+}*/
+//----------------------------
+/*$('.header_bar').on('click', function(){
+    //e.preventDefault();
+    $('.dropout').toggleClass('dropout_active');
+})
+
+loginbtn.onclick = function register(login, password){
+ var un = document.getElementById("regusername").value;
+ var pw = document.getElementById("regpassword").value;
+ var rp = document.getElementById("reppassword").value;
+ var f = "userdata.txt";
+
+ if(pw === rp){
+
+ writeTextFile(f, un);
+ writeTextFile(f, pw);
+
+ function writeTextFile(un){
+ var txtFile = new File("userdata.txt")
+ txtFile.write(un);
+ txtFile.close();
+ }
+}
+else{
+    alert("password doesn't match")
+}
+}*/
