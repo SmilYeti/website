@@ -20,15 +20,34 @@ $(document).ready(function(){
 });
 */
 //hints--------------
-$(document).ready(function(){
-    $('.hover').mouseon(function(e){
-        var hint = $(this).attr('ht');
-        $('#hint').css({'left': e.clientX + 10, 'top': e.clientY + 10});
-        $('#hint').show().text(hint);
-    }).mouseout(function(){
-        $('#hint').hide();
+$(function(){
+    $("[data-tooltip]").mousemove(function (eventObject) {
+        $data_tooltip = $(this).attr("data-tooltip");
+        $("#tooltip").html($data_tooltip)
+            .css({ 
+              "top" : eventObject.pageY + 5,
+              "left" : eventObject.pageX + 5
+            })
+            .show();
+        }).mouseout(function () {
+          $("#tooltip").hide()
+            .html("")
+            .css({
+                "top" : 0,
+                "left" : 0
+            });
     });
 });
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 //hints--------------
 //hints for product--------------
 /*var modal1 = document.getElementById("modal1");
