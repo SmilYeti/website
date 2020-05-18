@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <head>
+        <title>Books</title>
+    </head>
+    <!--BODY-->
+    <body>
+
+        <nav class = "dropout">
+            <a  href="#">Боевики</a>
+            <a href="#">Художественная литература</a>
+            <a href="#">Детективы</a>
+            <a href="#">Детская литература</a>
+            <a href="#">Драма</a>
+            <a href="#">Триллеры</a>
+            <a href="#">Ужасы</a>
+            <a href="#">Поэзия</a>
+            <a href="#">История</a>
+            <a href="#">Наука</a>
+            <a href="#">Классика</a>
+            </nav>
+        <!--HEADER-->
+        <div class="header_bar">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Жанры</a></li>
+                <li><a href="new.html">Новые</a></li>
+                <li><a href="top.html">Топ</a></li>
+
+                <li style="float: right;"><a class="active" href="register.html">Register</a></li>
+     
+                <li style="float: right;"><a onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+            </ul>
+        </div>
+
+        <!--------------LOGIN JS-------------->
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="photos/Linux.png" width="32" height="256" alt="Avatar" class="avatar">
+              </div>
+
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Forgot password?</a></span>
+              </div>
+            </form>
+          </div>
+          <!---------LOGIN JS----------->
+
+        <!--HEADER-->
+
+        <div class="padding"></div>
+        <!--NAV_BAR-->
+        <div class="sidebar">
+            <ul>
+                <li><a  href="#">Боевики</a></li>
+                <li><a href="#">Художественное</a></li>
+                <li><a href="#">Детективы</a></li>
+                <li><a href="#">Детския</a></li>
+                <li><a href="#">Драма</a></li>
+                <li><a href="#">Триллеры</a></li>
+                <li><a href="#">Ужасы</a></li>
+               
+            </ul>
+            
+        </div>
+        <!--NAV_BAR-->
+        <div class="content">
+        <div class="navigation_bar">
+            <div id="hint"></div>
+            <br><br><br>
+                <a href = "nevidimka.html"><img class="hover" ht="Hello" id = "btn1" src="photos/nevidimka.jpg"></a>
+                <a href = "hishnie.html"><img class="hover" ht="Фаворит" src="photos/hishnie.webp"></a>
+                <a href = "kalash.html"><img class="hover" src="photos/kalash.jpg"></a>
+                <a href = "sanik.html"><img class="hover" src="photos/sanik.jpg"></a>
+                <a href = "vpered.html"><img class="hover" src="photos/vpered.jpeg"></a>
+                <a href = "zov-predkov.html"><img class="hover" src="photos/zov-predkov.jpeg"></a>
+                <a href = "bloodshot.html"><img class="hover" src="photos/Bloodshot.jpg"></a>
+                <a href = "bad-boys.html"><img class="hover" src="photos/bad-boys.jpg"></a>
+                <a href = "led2.html"><img class="hover" src="photos/led2.webp"></a>
+                <a href = "007.html"><img class="hover" src="photos/007.webp"></a>
+                <a href = "x1000.html"><img class="hover" src="photos/x1000.webp"></a>
+                <a href = "troli.html"><img class="hover" src="photos/Troli.jpg"></a>
+                
+            </div>
+            </div>
+        <!--CHOOSING
+        CHOOSING-->
+        <div id = "modal1" class = "modal1" style="display: none;">
+            <ul>
+                <button class = "span" id = "span1" style="color: silver;">X</button>
+                <li>Жанр:Боевик</li>
+                <li>Дата выхода:12.03.20</li>
+                <li>Главная роль: Вин Дизель</li>
+            </ul>
+            </div>
+
+
+        <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </body>
+    <!--BODY-->
+</html>
